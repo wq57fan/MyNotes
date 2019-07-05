@@ -40,6 +40,23 @@ git remote add origin https://github.com/wq57fan/库名字.git | 在本地关联
 则执行这个命令之后，你可以重新写入账号密码，这样就可以重新提交代码了。
 
 
+Github仓库改名后本地同步步骤
+---
+一、本地仓库路径下执行以下代码，列出每个远程库的简短名字：
+
+	$ git remote -v
+
+二、在本地仓库删除远程仓库：
+
+	$ git remove rm origin
+
+三、修改Github仓库名称和本地路径名称，同时本地文件夹的名称也改一下；
+
+四、在本地添加新的远程仓库，在本地的仓库路径下键入：
+		
+	$ git remote add origin git@github.com:USERNAME/FILENAME.git
+
+
 撤销修改
 ---
 场景一：当你改乱了工作区某个文件的内容，想直接丢弃工作区的修改时，用命令git checkout -- file
@@ -58,13 +75,22 @@ git remote add origin https://github.com/wq57fan/库名字.git | 在本地关联
 
 创建与合并分支
 ---
-	创建分支：$ git branch <name>
-	切换分支：$ git checkout <name>
-	上面两句可以合并为：
-	$ git checkout -b dev	创建dev分支，然后切换到dev分支
+查看分支:
 
 	$ git branch			 列出所有分支，并查看当前分支
 
+创建分支：
+
+	$ git branch <name>
+	
+切换分支：
+
+	$ git checkout <name>
+
+上面创建、切换的两句可以合并为：
+	
+	$ git checkout -b dev	创建dev分支，然后切换到dev分支
+	
 提交作业后切换回主分支再合并：
 
 	$ git checkout master		  切换回master分支
