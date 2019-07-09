@@ -112,7 +112,7 @@ git rebase 可以帮助项目中的提交历史干净整洁。
 
 代码 | 内容
 -|-
-git rebase -i <commitID> | commitID是要合并的commit后形成的需要跟着的commitID。
+git rebase -i commitID | 修改已提交的commit。commitID是要合并的commit后形成的需要跟着的commitID。
 git rebase --edit-todo|如果你异常退出了 vi 窗口，想要再进入
 git rebase --abort | 终止rebase的行动，并且分支会回到rebase开始前的状态
 git rebase --continue|编辑修改完后保存
