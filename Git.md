@@ -48,7 +48,7 @@ Github仓库改名后本地同步步骤
 
 二、在本地仓库删除远程仓库：
 
-	$ git remove rm origin
+	$ git remote rm origin
 
 三、修改Github仓库名称和本地路径名称，同时本地文件夹的名称也改一下；
 
