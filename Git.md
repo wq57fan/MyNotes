@@ -104,3 +104,9 @@ Github仓库改名后本地同步步骤
 用git log --graph命令可以看到分支合并图：
 
 	$ git log --graph --pretty=oneline --abbrev-commit		查看分支的合并情况
+
+Git rebase
+---
+代码 | 内容
+-|-
+git rebase -i <commitID> | commitID是要合并的commit后形成的需要跟着的commitID。
