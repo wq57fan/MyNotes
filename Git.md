@@ -48,7 +48,7 @@ Github仓库改名后本地同步步骤
 
 二、在本地仓库删除远程仓库：
 
-	$ git remove rm origin
+	$ git remote rm origin
 
 三、修改Github仓库名称和本地路径名称，同时本地文件夹的名称也改一下；
 
@@ -104,3 +104,9 @@ Github仓库改名后本地同步步骤
 用git log --graph命令可以看到分支合并图：
 
 	$ git log --graph --pretty=oneline --abbrev-commit		查看分支的合并情况
+
+Git rebase
+---
+代码 | 内容
+-|-
+git rebase -i <commitID> | commitID是要合并的commit后形成的需要跟着的commitID。
