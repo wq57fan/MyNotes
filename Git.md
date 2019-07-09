@@ -12,6 +12,7 @@ git log | 显示从最近到最远的提交日志
 git reflog | 看命令历史，以便确定要回到未来的哪个版本
 git reset --hard HEAD^ | 回退到上一个版本（HEAD指向的版本就是当前版本）
 git rm test.txt | 在本地把test.txt文件删了
+git remote -v | 查看远程库的信息
 git remote add origin https://github.com/wq57fan/库名字.git | 在本地关联远程库，远程库的名字是origin（Git默认的）
 
 
@@ -48,7 +49,7 @@ Github仓库改名后本地同步步骤
 
 二、在本地仓库删除远程仓库：
 
-	$ git remove rm origin
+	$ git remote rm origin
 
 三、修改Github仓库名称和本地路径名称，同时本地文件夹的名称也改一下；
 
@@ -107,6 +108,12 @@ Github仓库改名后本地同步步骤
 
 Git rebase
 ---
+git rebase 可以帮助项目中的提交历史干净整洁。
+
 代码 | 内容
 -|-
 git rebase -i <commitID> | commitID是要合并的commit后形成的需要跟着的commitID。
+git rebase --edit-todo|如果你异常退出了 vi 窗口，想要再进入
+git rebase --abort | 终止rebase的行动，并且分支会回到rebase开始前的状态
+git rebase --continue|编辑修改完后保存
+
