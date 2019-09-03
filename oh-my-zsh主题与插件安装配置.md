@@ -13,7 +13,7 @@
 
 	sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-##主题
+## 主题
 #### 1、主题更换
 
 打开.zshrc文件：
